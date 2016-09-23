@@ -1,0 +1,47 @@
+***************SORU********************
+Maaþ Hesaplamasý
+
+Bir çalýþanýn maaþý içerisinde devlete verilen vergiler ve çeþitli kesintiler bulunmaktadýr. Tüm kesinti ve vergilerin de içerisinde bulunduðu tutara brüt maaþ, çalýþanýn eline geçen paraya ise net maaþ denmektedir.
+
+brüt maaþ = net maaþ + kesintiler + vergiler
+
+Devlet brüt maaþý belli olan bir personel için net maaþ hesaplamasýnýn ne þekilde olacaðýný belirtmiþtir. Çok basit bir örnek olarak,
+
+kesintiler = brüt maaþ * 0.1
+
+vergiler = brüt maaþ * 0.2
+
+Þeklinde bir formül ile brüt maaþý belli bir personelin net maaþýnýn ne kadar olduðu hesaplanabilmektedir.
+
+Kesinti ve vergilerin hesaplamasý gerçekte karmaþýk formüllere ve deðiþkenlere baðlý olduðu için, net maaþý belli personelin brüt maaþýnýn hesaplanmasý formüle edilememektedir. Dolayýsýyla net maaþý belli personelin brüt maaþýný bulabilmek için brütten net maaþ hesaplayan formül kullanýlmalýdýr. Dolayýsýyla, “X liralýk net maaþ için ne kadarlýk brüt maaþ gerekir?” sorusunun cevabý için önce tahmini bir brüt tutar kullanýlýp bunun neti hesaplanmalý, aradaki farka göre tahminler devam etmelidir.
+
+Elinizde
+
+double NetMaaþHesapla(double brütMaaþ)
+
+þeklinde, brüt maaþ alýp net maaþ dönen bir metodunuz olduðunu varsayýn. 
+
+Bu metodu kullanan ve recursive (özyineli) olan, net maaþý alýp bundan brüt maaþý hesaplayan bir metod yazýn.
+
+Not: Ortalama olarak X tutarýndaki bir net maaþýn 1.5X civarýnda brüt tutarý olduðunu varsayýp tahminlerinizi ona göre yaptýrabilirsiniz.
+
+************GENEL BÝLGÝLER*************
+
+1-Uygulama Java ile kodlandý.
+2-Kodlama yaptýgým bilgisayar 64-bit, Java version 8 update 91 mevcut.(JRE1.8.0_91)
+3-Eclipse Juno( Juno Service Release 2) ortamýnda derlenildi.
+
+*********PROGRAMIN DERLENMESÝ**********
+
+1-Eclipse Juno bilgisayara yüklenir. (https://www.eclipse.org/downloads/download.php?file=/oomph/epp/neon/R/eclipse-inst-win64.exe)
+2-Proje import edilir.(File->Import->General->Existing Project into Workspace->Browse ile projenin konumu secilir ve tamamlanýr.)
+3-Java Build Path ayarlarý yapýlýr.(Proje dosyasý sað týk->Properties->Java Build Path->JRE System Library Edit)
+4-Proje derlenir. (Proje dosyasý sað týk->Run as->Java application secilir.)
+
+**********UYGULAMA KULLANIMI***********
+
+1-com.adayazili.example2.solve paketinde Islemler sýnýfýnda bulunan 
+	public double NetMaasHesapla(double brutTahmin) metodu programýn calýþabilmesi için içeriði rastgele doldurulmuþtur.
+
+2-Gerekli yonlendirmeler program çalýþýr haldeyken yapýlacaktýr.
+	

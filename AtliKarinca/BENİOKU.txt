@@ -1,0 +1,44 @@
+*****************SORU******************
+ Atlý Karýnca
+
+Bir lunaparkta atlý karýnca var. Atlý karýncaya her seferinde k kiþi binebiliyor. Atlý karýnca bir gün içerisinde R defa çalýþýyor.
+
+Atlý karýncaya binmek isteyen N adet grup var. Her grupta 1 veya daha fazla kiþi bulunabiliyor.
+
+Her turda, sýradaki ilk gruptan baþlayarak atlý karýncaya biniliyor. Eðer bir grubun tamamý için yer kalmadýysa daha fazla kiþi binmeden tur baþlýyor. Dolayýsýyla atlý karýnca tam dolmadan da çalýþabiliyor. Tur bittikten sonra atlý karýncaya binen gruplar, bindikleri sýrada, kuyruðun en arkasýna yeniden katýlýyor.
+
+Atlý karýncaya her binen kiþi 1 TL’ye bilet alýyor.
+
+Örneðin, R=4, k=6 varsayalým. Atlý karýncaya binecek dört grup var ve bunlarýn kiþi sayýlarý 1, 4, 2, 1. Ýlk turda ilk iki grup sýðabilir [1,4]. Ýlk tur bitince bu iki grup sýranýn en sonuna geçecek ve sýra 2, 1, 1, 4 haline gelecek. Ýkinci turda [2, 1, 1] þeklinde 4 kiþi sýðabilecek. Þimdi sýra 4, 2, 1, 1 haline geldi. Üçüncü turda atlý karýncaya 6 kiþi binecek [4, 2]. Sýra 1, 1, 4, 2 oldu. Dördüncü ve son turda altý kiþi binecek, [1, 1, 4]. Atlý karýnca toplamda 21 lira kazanmýþ oldu.
+Input
+
+Ýlk satýrda boþlukla ayrýlmýþ 3 adet rakam yer alacak: R, k ve N. Ýkinci satýrda boþlukla ayrýlmýþ þekilde N adet rakam yer alacak. Bu rakamlar gruplardaki kiþi sayýsýný belirtecek. Örnek Input
+
+4 6 4
+1 4 2 1
+Output
+
+Program toplam kazanýlan parayý yazacak 
+
+Optimizasyon Ýpuçlarý
+
+1 – Sýranýn o anki durumu için önceden hesaplama yapýldýysa yeniden hesaplama yerine önceden hesaplamanýn sonucu kullanýlabilir.
+
+2 – En fazla N + 1 tur sonra sýranýn durumu önceki durumlardan biri haline gelecek ve bir döngü oluþacaktýr.   
+
+************GENEL BÝLGÝLER*************
+
+1-Uygulama Java ile kodlandý.
+2-Kodlama yaptýgým bilgisayar 64-bit, Java version 8 update 91 mevcut.(JRE1.8.0_91)
+3-Eclipse Juno( Juno Service Release 2) ortamýnda derlenildi.
+
+*********PROGRAMIN DERLENMESÝ**********
+
+1-Eclipse Juno bilgisayara yüklenir. (https://www.eclipse.org/downloads/download.php?file=/oomph/epp/neon/R/eclipse-inst-win64.exe)
+2-Proje import edilir.(File->Import->General->Existing Project into Workspace->Browse ile projenin konumu secilir ve tamamlanýr.)
+3-Java Build Path ayarlarý yapýlýr.(Proje dosyasý sað týk->Properties->Java Build Path->JRE System Library Edit)
+4-Proje derlenir. (Proje dosyasý sað týk->Run as->Java application secilir.)
+
+**********UYGULAMA KULLANIMI***********
+
+1-Gerekli yönlendirilmeler uygulamanýn çalýþýr halinde yapýlacaktýr.
