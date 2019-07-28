@@ -34,7 +34,6 @@ public class Run {
 				}
 				grupSiraliListe = null;
 				while (grupSiraliListe == null) {
-					grupSiraliListe = null;
 					System.out.println("Gruplarin kacar kisi olduklarini birer boslukla giriniz");
 					control = false;
 					while (control != true) {
